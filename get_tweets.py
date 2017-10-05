@@ -1,6 +1,7 @@
 from twitterscraper import query_tweets
 import re
 from frequent_words import *
+from all_emojis import *
 
 def clean_tweet(tweet_string):
 	tweet_string = tweet_string.replace('\n',' ').strip()
@@ -18,7 +19,7 @@ requiredNamed.add_argument('-l', '--language', help='Language of tweets', requir
 
 
 
-data_file = open('./hindi_data.text', 'w')
+data_file = open('./test_hindi_data.text', 'w')
 saved_tweets_id = {}
 saved_tweets_string = {}
 count = 0
